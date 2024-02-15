@@ -1,0 +1,48 @@
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px; /* Adjust padding as needed */
+    /* Add background image and positioning here (optional) */
+  }
+  
+  @media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .hero {
+      padding: 20px; /* Adjust for better viewing experience */
+      font-size: 1.2rem; /* Adjust font size if needed */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for even smaller screens */
+    .hero {
+      padding: 15px; /* Adjust for better viewing experience */
+      font-size: 1rem; /* Adjust font size if needed */
+    }
+  }
+
+.picture-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust spacing between pictures */
+  }
+  
+  .picture {
+    background-color: #f5f5f5; /* Optional background color */
+    padding: 10px; /* Adjust padding */
+    text-align: center; /* Optional: Center captions */
+  }
+  
+  .picture img {
+    width: 100%; /* Fill container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Fill container while preserving aspect ratio */
+  }
+  
+  .caption {
+    margin-top: 10px; /* Adjust caption spacing */
+    font-size: 0.8rem; /* Adjust caption size */
+  }
