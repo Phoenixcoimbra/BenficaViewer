@@ -37,7 +37,7 @@
   }
   
   .picture img {
-    width: 100%; /* Fill container */
+    width: 50%; /* Fill container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Fill container while preserving aspect ratio */
   }

@@ -7,6 +7,8 @@
     <meta name="keywords" content="Benfica, Viewer, Football, Soccer">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="/assets/js/index.js"></script>
             </head>
     <body>
 
@@ -17,21 +19,29 @@
 
         <div class="picture-board">
             <div class="picture">
-              <img src="/assets/images/SLB.jpg" alt="Image 1">
-              <div class="caption">Image 1 Caption</div>
+              <img id="fixed-team-logo" alt="Image 1">
+              <div class="caption">fixed-team-name</div>
             </div>
             <div class="picture">
               <img src="/assets/images/visitor.jpeg" alt="Image 2">
-              <div class="caption">Image 2 Caption</div>
+              <div class="caption">Visitante</div>
             </div>
           </div>
+
+          <div class="team Benfica">
+            <h2>Sport Lisboa e Benfica</h2>
+            <span id="Benfica-score">0</span>
+            <!-- <button id="call-button">Call for Fixed Team</button> -->
+          </div>
+          <div class="team opposition">
+            <h2>Opposition Name</h2>
+            <span id="opposition-team-score">0</span>
+          </div>
+          <div id="call-container"></div>  
           
     </body>
-    </html>
     
-    <title>Benfica Viewer</title>
-</head>
-<body>
-    
-</body>
+  
+
+
 </html>
