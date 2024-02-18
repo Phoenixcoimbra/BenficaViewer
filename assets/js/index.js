@@ -31,16 +31,16 @@ async function getFixedTeam(teamId) {
     }
   }
 
-getFixedTeam(fixedTeamId)
-  .then(teamData => {
-    if (teamData) {
-      // Use the retrieved team data here, e.g., display team name, logo, etc.
-      console.log("Fixed team data:", teamData);
-    } else {
-      // Handle cases where data retrieval failed
-      console.error("Failed to get fixed team data");
-    }
-  });
+// getFixedTeam(fixedTeamId)
+//   .then(teamData => {
+//     if (teamData) {
+//       // Use the retrieved team data here, e.g., display team name, logo, etc.
+//       console.log("Fixed team data:", teamData);
+//     } else {
+//       // Handle cases where data retrieval failed
+//       console.error("Failed to get fixed team data");
+//     }
+//   });
 
   const teamNameElement = document.getElementById("fixed-team-name");
   const teamLogoElement = document.getElementById("fixed-team-logo");

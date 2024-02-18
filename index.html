@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/css/style.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="/assets/js/index.js"></script>
+        <script type="module" src="https://widgets.api-sports.io/2.0.3/widgets.js"></script>
+
             </head>
     <body>
 
@@ -19,7 +20,7 @@
 
         <div class="picture-board">
             <div class="picture">
-              <img id="fixed-team-logo" alt="Image 1">
+              <img src="/assets/images/SLB.jpg" alt="Image 1">
               <div class="caption">fixed-team-name</div>
             </div>
             <div class="picture">
@@ -31,17 +32,45 @@
           <div class="team Benfica">
             <h2>Sport Lisboa e Benfica</h2>
             <span id="Benfica-score">0</span>
-            <!-- <button id="call-button">Call for Fixed Team</button> -->
+             <button id="call-button">Call for Fixed Team</button>
           </div>
           <div class="team opposition">
             <h2>Opposition Name</h2>
             <span id="opposition-team-score">0</span>
           </div>
           <div id="call-container"></div>  
-          
+        
+          <div id="wg-api-football-game"
+          data-host="v3.football.api-sports.io"
+          data-key="85cee54e6ac660bbf59c4a410daf6965"
+          data-id="211"
+          data-theme=""
+          data-refresh="15"
+          data-show-errors="false"
+          data-show-logos="true">
+      </div>
+     
+
+<div id="wg-api-football-standings"
+data-host="v3.football.api-sports.io"
+data-key="85cee54e6ac660bbf59c4a410daf6965"
+data-league="94"
+data-team=""
+data-season="2023"
+data-theme=""
+data-show-errors="false"
+data-show-logos="true"
+class="wg_loader">
+</div>
+
+
+      
+
+
+
     </body>
     
   
 
-
+    <script src="/assets/js/index.js"></script>
 </html>
