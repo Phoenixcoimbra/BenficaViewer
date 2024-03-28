@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SL Benfica - Current Season</title>
+  <title>SL Benfica - Viewer</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
 </head>
 <body>
   <header>
@@ -12,25 +15,21 @@
       <a href="#" class="logo">
         <img src="/assets/images/benfica-logo.png" alt="SL Benfica Logo">
       </a>
-      <nav>
-        <ul>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Schedule & Results</a></li>
-          <li><a href="#">Statistics</a></li>
-          <li><a href="#">Benfica TV</a></li>
-          <li><a href="#">Store</a></li>
-          <li class="dropdown">
-            <a href="#">Membership</a>
-            <ul class="dropdown-content">
-              <li><a href="https://www.slbenfica.pt/en-us/loja/s%C3%B3cios/adesao/dados-pessoais">Join Now</a></li>
-              <li><a href="#">My Account</a></li>
-            </ul>
-          </li>
-          <li class="language">
-            <a href="#">EN</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SLB 1904 News</a>
+          
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="/stats.html">Statistics</a>
+              <a class="nav-link" href="/news.html">News</a>
+              <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -44,8 +43,8 @@
       <table>
         <thead>
           <tr>
-            <th>Stat</th>
-            <th>Value</th>
+            <th>Portuguese League</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -106,8 +105,9 @@
         <li><a href="#">Blog Post 3 - Enticing Headline</a></li>
       </ul>
     </section>
+    
   </main>
-
+  <script src="/assets/js/script.js"></script>
   <footer>
     <div class="container">
       <div class="social">
