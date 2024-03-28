@@ -1,48 +1,185 @@
-.hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 30px; /* Adjust padding as needed */
-    /* Add background image and positioning here (optional) */
-  }
-  
-  @media (max-width: 768px) {
-    /* Styles for smaller screens */
-    .hero {
-      padding: 20px; /* Adjust for better viewing experience */
-      font-size: 1.2rem; /* Adjust font size if needed */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    /* Styles for even smaller screens */
-    .hero {
-      padding: 15px; /* Adjust for better viewing experience */
-      font-size: 1rem; /* Adjust font size if needed */
-    }
-  }
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-image: url(""); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* Remove opacity property (opacity: 1 by default) */
+}
 
-.picture-board {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Adjust spacing between pictures */
-  }
-  
-  .picture {
-    background-color: #f5f5f5; /* Optional background color */
-    padding: 10px; /* Adjust padding */
-    text-align: center; /* Optional: Center captions */
-  }
-  
-  .picture img {
-    width: 50%; /* Fill container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Fill container while preserving aspect ratio */
-  }
-  
-  .caption {
-    margin-top: 10px; /* Adjust caption spacing */
-    font-size: 0.8rem; /* Adjust caption size */
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #E83030;
+  color: #fff;
+}
+
+.logo img {
+  width: 150px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #12814B;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.language {
+  float: right;
+  margin-right: 10px;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* Main content area styles */
+main {
+  padding-bottom: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  color: #E83030;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.stats table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stats th, .stats td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.stats th {
+  background-color: #f2f2f2;
+}
+
+.charts {
+  /* Add styling for charts here (consider using a charting library) */
+}
+
+.next-match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next-match p {
+  margin: 0;
+}
+
+.next-match a {
+  background-color: #12814B;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.next-match a:hover {
+  background-color: #1074BC;
+}
+
+.head-to-head table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.head-to-head th, .head-to-head td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;

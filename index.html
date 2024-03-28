@@ -1,76 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Benfica Viewer">
-    <meta name="keywords" content="Benfica, Viewer, Football, Soccer">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script type="module" src="https://widgets.api-sports.io/2.0.3/widgets.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL Benfica - Current Season</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="/assets/images/benfica-logo.png" alt="SL Benfica Logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Schedule & Results</a></li>
+          <li><a href="#">Statistics</a></li>
+          <li><a href="#">Benfica TV</a></li>
+          <li><a href="#">Store</a></li>
+          <li class="dropdown">
+            <a href="#">Membership</a>
+            <ul class="dropdown-content">
+              <li><a href="https://www.slbenfica.pt/en-us/loja/s%C3%B3cios/adesao/dados-pessoais">Join Now</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </li>
+          <li class="language">
+            <a href="#">EN</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            </head>
-    <body>
-
-        <div class="hero">
-            <h1>Benfica Viewer</h1>
-            <p>A analise ao Benfica feita ao vivo</p>
-        </div>  
-
-        <div class="picture-board">
-            <div class="picture">
-              <img src="/assets/images/SLB.jpg" alt="Image 1">
-              <div class="caption">fixed-team-name</div>
-            </div>
-            <div class="picture">
-              <img src="/assets/images/visitor.jpeg" alt="Image 2">
-              <div class="caption">Visitante</div>
-            </div>
-          </div>
-
-          <div class="team Benfica">
-            <h2>Sport Lisboa e Benfica</h2>
-            <span id="Benfica-score">0</span>
-             <button id="call-button">Call for Fixed Team</button>
-          </div>
-          <div class="team opposition">
-            <h2>Opposition Name</h2>
-            <span id="opposition-team-score">0</span>
-          </div>
-          <div id="call-container"></div>  
-        
-          <div id="wg-api-football-game"
-          data-host="v3.football.api-sports.io"
-          data-key="85cee54e6ac660bbf59c4a410daf6965"
-          data-id="211"
-          data-theme=""
-          data-refresh="15"
-          data-show-errors="false"
-          data-show-logos="true">
-      </div>
-     
-
-<div id="wg-api-football-standings"
-data-host="v3.football.api-sports.io"
-data-key="85cee54e6ac660bbf59c4a410daf6965"
-data-league="94"
-data-team=""
-data-season="2023"
-data-theme=""
-data-show-errors="false"
-data-show-logos="true"
-class="wg_loader">
-</div>
-
-
-      
-
-
-
-    </body>
-    
   
 
-    <script src="/assets/js/index.js"></script>
-</html>
+
+  <main class="container">
+    <section class="stats">
+      <h2>Current Season Stats</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Points</td>
+            <td id="points"></td>
+          </tr>
+          <tr>
+            <td>Games Played</td>
+            <td id="games-played"></td>
+          </tr>
+          </tbody>
+      </table>
+      <div class="charts">
+        </div>
+    </section>
+
+    <section class="next-match">
+      <h2>Next Match</h2>
+      <p>
+        Opponent: <span id="opponent"></span> <br>
+        Date: <span id="match-date"></span> <br>
+        Time: <span id="match-time"></span> <br>
+        Competition: <span id="competition"></span> <br>
+        Venue: <span id="venue"></span>
+      </p>
+      <div class="actions">
+        <a href="https://www.slbenfica.pt/loja/bilhetes/jogos/comprav2/pt-PT/event/GCBQWDUQVPSI">Buy Tickets</a>
+        <a href="#">Set Reminder</a>
+      </div>
+    </section>
+
+    <section class="head-to-head">
+      <h2>Head-to-Head (vs Next Opponent)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Competition</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+          </tbody>
+      </table>
+    </section>
+
+    <section class="blog">
+      <h2>Benfica Analysis</h2>
+      <ul>
+        <li><a href="#">Blog Post 1 - Enticing Headline</a></li>
+        <li><a href="#">Blog Post 2 - Enticing Headline</a></li>
+        <li><a href="#">Blog Post 3 - Enticing Headline</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
